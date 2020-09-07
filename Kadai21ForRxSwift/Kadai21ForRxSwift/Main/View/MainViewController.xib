@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Kadai21ForRxSwift" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="ikJ-SB-Kcz" id="Q6U-UD-oFm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="o9i-Ft-dt1"/>
             </connections>
         </placeholder>

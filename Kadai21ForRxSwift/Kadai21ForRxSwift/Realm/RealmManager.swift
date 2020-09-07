@@ -13,8 +13,9 @@ class RealmManager {
     
     static let shared = RealmManager()
     
-    func fetchRegisterData() -> Results<Object>? {
-        return self.fetch(RegisterModel.self)
+    func fetchRegisterData() -> [RegisterModel]? {
+        return self.fetch(RegisterModel.self)?
+            .compactMap { $0 as? RegisterModel }
     }
     
     func pushRegisterData(data: Object) {

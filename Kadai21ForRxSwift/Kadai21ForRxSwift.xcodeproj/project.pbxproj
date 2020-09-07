@@ -18,6 +18,7 @@
 		572A904025060A65002697DD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572A903F25060A65002697DD /* MainViewController.xib */; };
 		572A904525060F7A002697DD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A904425060F7A002697DD /* RealmManager.swift */; };
 		572A904725060FF0002697DD /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A904625060FF0002697DD /* RegisterModel.swift */; };
+		572A904A250678C8002697DD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A9049250678C8002697DD /* MainViewModel.swift */; };
 		7C060FD62D197BA40A1FFB1E /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037187CF2FC74C93ED87DD8B /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework */; };
 		ED153285C7AE004F98CC7E59 /* Pods_Kadai21ForRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF3697E31058269803FDC7 /* Pods_Kadai21ForRxSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		572A903F25060A65002697DD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		572A904425060F7A002697DD /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		572A904625060FF0002697DD /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		572A9049250678C8002697DD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7560E2AA7B0C0AA6146663A4 /* Pods-Kadai21ForRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		D50CFEF011B175DA23608213 /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA94402C1F653F49CF22F34D /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,8 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				572A904325060F5F002697DD /* Realm */,
-				572A904125060D86002697DD /* View */,
-				572A904625060FF0002697DD /* RegisterModel.swift */,
+				572A904B2506F164002697DD /* Main */,
 				572A900F25060279002697DD /* AppDelegate.swift */,
 				572A901125060279002697DD /* SceneDelegate.swift */,
 				572A901825060280002697DD /* Assets.xcassets */,
@@ -188,6 +189,16 @@
 				572A904425060F7A002697DD /* RealmManager.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		572A904B2506F164002697DD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				572A904125060D86002697DD /* View */,
+				572A904625060FF0002697DD /* RegisterModel.swift */,
+				572A9049250678C8002697DD /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +445,7 @@
 				572A904525060F7A002697DD /* RealmManager.swift in Sources */,
 				572A901025060279002697DD /* AppDelegate.swift in Sources */,
 				572A901225060279002697DD /* SceneDelegate.swift in Sources */,
+				572A904A250678C8002697DD /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
