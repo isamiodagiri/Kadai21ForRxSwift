@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		572A901025060279002697DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A900F25060279002697DD /* AppDelegate.swift */; };
+		572A901225060279002697DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901125060279002697DD /* SceneDelegate.swift */; };
+		572A901425060279002697DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901325060279002697DD /* ViewController.swift */; };
+		572A901725060279002697DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572A901525060279002697DD /* Main.storyboard */; };
+		572A901925060280002697DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572A901825060280002697DD /* Assets.xcassets */; };
+		572A901C25060280002697DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572A901A25060280002697DD /* LaunchScreen.storyboard */; };
+		572A902725060281002697DD /* Kadai21ForRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A902625060281002697DD /* Kadai21ForRxSwiftTests.swift */; };
+		572A903225060281002697DD /* Kadai21ForRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		572A902325060281002697DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 572A900425060279002697DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572A900B25060279002697DD;
+			remoteInfo = Kadai21ForRxSwift;
+		};
+		572A902E25060281002697DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 572A900425060279002697DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572A900B25060279002697DD;
+			remoteInfo = Kadai21ForRxSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		572A900C25060279002697DD /* Kadai21ForRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kadai21ForRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		572A900F25060279002697DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		572A901125060279002697DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		572A901325060279002697DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		572A901625060279002697DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		572A901825060280002697DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		572A901B25060280002697DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		572A901D25060280002697DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572A902225060281002697DD /* Kadai21ForRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kadai21ForRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		572A902625060281002697DD /* Kadai21ForRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai21ForRxSwiftTests.swift; sourceTree = "<group>"; };
+		572A902825060281002697DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572A902D25060281002697DD /* Kadai21ForRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kadai21ForRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai21ForRxSwiftUITests.swift; sourceTree = "<group>"; };
+		572A903325060281002697DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		572A900925060279002697DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A901F25060281002697DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A902A25060281002697DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		572A900325060279002697DD = {
+			isa = PBXGroup;
+			children = (
+				572A900E25060279002697DD /* Kadai21ForRxSwift */,
+				572A902525060281002697DD /* Kadai21ForRxSwiftTests */,
+				572A903025060281002697DD /* Kadai21ForRxSwiftUITests */,
+				572A900D25060279002697DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		572A900D25060279002697DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				572A900C25060279002697DD /* Kadai21ForRxSwift.app */,
+				572A902225060281002697DD /* Kadai21ForRxSwiftTests.xctest */,
+				572A902D25060281002697DD /* Kadai21ForRxSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		572A900E25060279002697DD /* Kadai21ForRxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				572A900F25060279002697DD /* AppDelegate.swift */,
+				572A901125060279002697DD /* SceneDelegate.swift */,
+				572A901325060279002697DD /* ViewController.swift */,
+				572A901525060279002697DD /* Main.storyboard */,
+				572A901825060280002697DD /* Assets.xcassets */,
+				572A901A25060280002697DD /* LaunchScreen.storyboard */,
+				572A901D25060280002697DD /* Info.plist */,
+			);
+			path = Kadai21ForRxSwift;
+			sourceTree = "<group>";
+		};
+		572A902525060281002697DD /* Kadai21ForRxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				572A902625060281002697DD /* Kadai21ForRxSwiftTests.swift */,
+				572A902825060281002697DD /* Info.plist */,
+			);
+			path = Kadai21ForRxSwiftTests;
+			sourceTree = "<group>";
+		};
+		572A903025060281002697DD /* Kadai21ForRxSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */,
+				572A903325060281002697DD /* Info.plist */,
+			);
+			path = Kadai21ForRxSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		572A900B25060279002697DD /* Kadai21ForRxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572A903625060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwift" */;
+			buildPhases = (
+				572A900825060279002697DD /* Sources */,
+				572A900925060279002697DD /* Frameworks */,
+				572A900A25060279002697DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kadai21ForRxSwift;
+			productName = Kadai21ForRxSwift;
+			productReference = 572A900C25060279002697DD /* Kadai21ForRxSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		572A902125060281002697DD /* Kadai21ForRxSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572A903925060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwiftTests" */;
+			buildPhases = (
+				572A901E25060281002697DD /* Sources */,
+				572A901F25060281002697DD /* Frameworks */,
+				572A902025060281002697DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				572A902425060281002697DD /* PBXTargetDependency */,
+			);
+			name = Kadai21ForRxSwiftTests;
+			productName = Kadai21ForRxSwiftTests;
+			productReference = 572A902225060281002697DD /* Kadai21ForRxSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		572A902C25060281002697DD /* Kadai21ForRxSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572A903C25060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwiftUITests" */;
+			buildPhases = (
+				572A902925060281002697DD /* Sources */,
+				572A902A25060281002697DD /* Frameworks */,
+				572A902B25060281002697DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				572A902F25060281002697DD /* PBXTargetDependency */,
+			);
+			name = Kadai21ForRxSwiftUITests;
+			productName = Kadai21ForRxSwiftUITests;
+			productReference = 572A902D25060281002697DD /* Kadai21ForRxSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		572A900425060279002697DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Isami Odagiri";
+				TargetAttributes = {
+					572A900B25060279002697DD = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					572A902125060281002697DD = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 572A900B25060279002697DD;
+					};
+					572A902C25060281002697DD = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 572A900B25060279002697DD;
+					};
+				};
+			};
+			buildConfigurationList = 572A900725060279002697DD /* Build configuration list for PBXProject "Kadai21ForRxSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 572A900325060279002697DD;
+			productRefGroup = 572A900D25060279002697DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				572A900B25060279002697DD /* Kadai21ForRxSwift */,
+				572A902125060281002697DD /* Kadai21ForRxSwiftTests */,
+				572A902C25060281002697DD /* Kadai21ForRxSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		572A900A25060279002697DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572A901C25060280002697DD /* LaunchScreen.storyboard in Resources */,
+				572A901925060280002697DD /* Assets.xcassets in Resources */,
+				572A901725060279002697DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A902025060281002697DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A902B25060281002697DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		572A900825060279002697DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572A901425060279002697DD /* ViewController.swift in Sources */,
+				572A901025060279002697DD /* AppDelegate.swift in Sources */,
+				572A901225060279002697DD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A901E25060281002697DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572A902725060281002697DD /* Kadai21ForRxSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A902925060281002697DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572A903225060281002697DD /* Kadai21ForRxSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		572A902425060281002697DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572A900B25060279002697DD /* Kadai21ForRxSwift */;
+			targetProxy = 572A902325060281002697DD /* PBXContainerItemProxy */;
+		};
+		572A902F25060281002697DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572A900B25060279002697DD /* Kadai21ForRxSwift */;
+			targetProxy = 572A902E25060281002697DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		572A901525060279002697DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				572A901625060279002697DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		572A901A25060280002697DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				572A901B25060280002697DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		572A903425060281002697DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		572A903525060281002697DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		572A903725060281002697DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kadai21ForRxSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		572A903825060281002697DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kadai21ForRxSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		572A903A25060281002697DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kadai21ForRxSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kadai21ForRxSwift.app/Kadai21ForRxSwift";
+			};
+			name = Debug;
+		};
+		572A903B25060281002697DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kadai21ForRxSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kadai21ForRxSwift.app/Kadai21ForRxSwift";
+			};
+			name = Release;
+		};
+		572A903D25060281002697DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kadai21ForRxSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kadai21ForRxSwift;
+			};
+			name = Debug;
+		};
+		572A903E25060281002697DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kadai21ForRxSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kadai21ForRxSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		572A900725060279002697DD /* Build configuration list for PBXProject "Kadai21ForRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572A903425060281002697DD /* Debug */,
+				572A903525060281002697DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572A903625060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572A903725060281002697DD /* Debug */,
+				572A903825060281002697DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572A903925060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572A903A25060281002697DD /* Debug */,
+				572A903B25060281002697DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572A903C25060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572A903D25060281002697DD /* Debug */,
+				572A903E25060281002697DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 572A900425060279002697DD /* Project object */;
+}
