@@ -6,6 +6,11 @@ target 'Kadai21ForRxSwift' do
   use_frameworks!
 
   # Pods for Kadai21ForRxSwift
+	pod 'RealmSwift', '5.3.6'
+	pod 'RxSwift', '5.1.1'
+	pod 'RxCocoa', '5.1.1'
+	pod 'RxDataSources', '4.0.1'
+
 
   target 'Kadai21ForRxSwiftTests' do
     inherit! :search_paths

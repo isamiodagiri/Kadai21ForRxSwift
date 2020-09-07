@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A3D9B4B4A0890D70086B7B /* Pods_Kadai21ForRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9A0FA76DE8ED180A57FBD /* Pods_Kadai21ForRxSwift.framework */; };
 		572A901025060279002697DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A900F25060279002697DD /* AppDelegate.swift */; };
 		572A901225060279002697DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901125060279002697DD /* SceneDelegate.swift */; };
 		572A901425060279002697DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901325060279002697DD /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		572A901C25060280002697DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572A901A25060280002697DD /* LaunchScreen.storyboard */; };
 		572A902725060281002697DD /* Kadai21ForRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A902625060281002697DD /* Kadai21ForRxSwiftTests.swift */; };
 		572A903225060281002697DD /* Kadai21ForRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */; };
+		7C060FD62D197BA40A1FFB1E /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037187CF2FC74C93ED87DD8B /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework */; };
+		ED153285C7AE004F98CC7E59 /* Pods_Kadai21ForRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF3697E31058269803FDC7 /* Pods_Kadai21ForRxSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		037187CF2FC74C93ED87DD8B /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE9A0FA76DE8ED180A57FBD /* Pods_Kadai21ForRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kadai21ForRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DEEBDDAB7A1B1547DAA6552 /* Pods-Kadai21ForRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwiftTests/Pods-Kadai21ForRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		27966887A27388DD1CB31FD0 /* Pods-Kadai21ForRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwiftTests/Pods-Kadai21ForRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C0C79968B3F87E5E830A85D /* Pods-Kadai21ForRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		4ACF3697E31058269803FDC7 /* Pods_Kadai21ForRxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kadai21ForRxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572A900C25060279002697DD /* Kadai21ForRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kadai21ForRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572A900F25060279002697DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572A901125060279002697DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		572A902D25060281002697DD /* Kadai21ForRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kadai21ForRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai21ForRxSwiftUITests.swift; sourceTree = "<group>"; };
 		572A903325060281002697DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7560E2AA7B0C0AA6146663A4 /* Pods-Kadai21ForRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		D50CFEF011B175DA23608213 /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA94402C1F653F49CF22F34D /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A3D9B4B4A0890D70086B7B /* Pods_Kadai21ForRxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED153285C7AE004F98CC7E59 /* Pods_Kadai21ForRxSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C060FD62D197BA40A1FFB1E /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4862E6305EFA1865C711EE76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C79968B3F87E5E830A85D /* Pods-Kadai21ForRxSwift.debug.xcconfig */,
+				7560E2AA7B0C0AA6146663A4 /* Pods-Kadai21ForRxSwift.release.xcconfig */,
+				FA94402C1F653F49CF22F34D /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig */,
+				D50CFEF011B175DA23608213 /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig */,
+				27966887A27388DD1CB31FD0 /* Pods-Kadai21ForRxSwiftTests.debug.xcconfig */,
+				0DEEBDDAB7A1B1547DAA6552 /* Pods-Kadai21ForRxSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4AFC0806DDEA5B48D016BBB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE9A0FA76DE8ED180A57FBD /* Pods_Kadai21ForRxSwift.framework */,
+				037187CF2FC74C93ED87DD8B /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework */,
+				4ACF3697E31058269803FDC7 /* Pods_Kadai21ForRxSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		572A900325060279002697DD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				572A902525060281002697DD /* Kadai21ForRxSwiftTests */,
 				572A903025060281002697DD /* Kadai21ForRxSwiftUITests */,
 				572A900D25060279002697DD /* Products */,
+				4862E6305EFA1865C711EE76 /* Pods */,
+				4AFC0806DDEA5B48D016BBB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 572A903625060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwift" */;
 			buildPhases = (
+				EE7D8854B6DBA388D0ACAD39 /* [CP] Check Pods Manifest.lock */,
 				572A900825060279002697DD /* Sources */,
 				572A900925060279002697DD /* Frameworks */,
 				572A900A25060279002697DD /* Resources */,
+				C4BC0DAE383E86C0F761F541 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 572A903925060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwiftTests" */;
 			buildPhases = (
+				6983416E9C57AF73FD82F9D9 /* [CP] Check Pods Manifest.lock */,
 				572A901E25060281002697DD /* Sources */,
 				572A901F25060281002697DD /* Frameworks */,
 				572A902025060281002697DD /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 572A903C25060281002697DD /* Build configuration list for PBXNativeTarget "Kadai21ForRxSwiftUITests" */;
 			buildPhases = (
+				8465DC09BAFEB21C76EE8C33 /* [CP] Check Pods Manifest.lock */,
 				572A902925060281002697DD /* Sources */,
 				572A902A25060281002697DD /* Frameworks */,
 				572A902B25060281002697DD /* Resources */,
+				34BAC0A67F29BF0D19132BE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34BAC0A67F29BF0D19132BE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6983416E9C57AF73FD82F9D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kadai21ForRxSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8465DC09BAFEB21C76EE8C33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4BC0DAE383E86C0F761F541 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE7D8854B6DBA388D0ACAD39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kadai21ForRxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		572A900825060279002697DD /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		572A903725060281002697DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C0C79968B3F87E5E830A85D /* Pods-Kadai21ForRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +599,7 @@
 		};
 		572A903825060281002697DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7560E2AA7B0C0AA6146663A4 /* Pods-Kadai21ForRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +617,7 @@
 		};
 		572A903A25060281002697DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27966887A27388DD1CB31FD0 /* Pods-Kadai21ForRxSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +639,7 @@
 		};
 		572A903B25060281002697DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEEBDDAB7A1B1547DAA6552 /* Pods-Kadai21ForRxSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +661,7 @@
 		};
 		572A903D25060281002697DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA94402C1F653F49CF22F34D /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +681,7 @@
 		};
 		572A903E25060281002697DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50CFEF011B175DA23608213 /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
