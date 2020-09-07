@@ -3,19 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05A3D9B4B4A0890D70086B7B /* Pods_Kadai21ForRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9A0FA76DE8ED180A57FBD /* Pods_Kadai21ForRxSwift.framework */; };
 		572A901025060279002697DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A900F25060279002697DD /* AppDelegate.swift */; };
 		572A901225060279002697DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901125060279002697DD /* SceneDelegate.swift */; };
-		572A901425060279002697DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901325060279002697DD /* ViewController.swift */; };
-		572A901725060279002697DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572A901525060279002697DD /* Main.storyboard */; };
+		572A901425060279002697DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A901325060279002697DD /* MainViewController.swift */; };
 		572A901925060280002697DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572A901825060280002697DD /* Assets.xcassets */; };
 		572A901C25060280002697DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572A901A25060280002697DD /* LaunchScreen.storyboard */; };
 		572A902725060281002697DD /* Kadai21ForRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A902625060281002697DD /* Kadai21ForRxSwiftTests.swift */; };
 		572A903225060281002697DD /* Kadai21ForRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */; };
+		572A904025060A65002697DD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572A903F25060A65002697DD /* MainViewController.xib */; };
+		572A904525060F7A002697DD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A904425060F7A002697DD /* RealmManager.swift */; };
+		572A904725060FF0002697DD /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572A904625060FF0002697DD /* RegisterModel.swift */; };
 		7C060FD62D197BA40A1FFB1E /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037187CF2FC74C93ED87DD8B /* Pods_Kadai21ForRxSwift_Kadai21ForRxSwiftUITests.framework */; };
 		ED153285C7AE004F98CC7E59 /* Pods_Kadai21ForRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF3697E31058269803FDC7 /* Pods_Kadai21ForRxSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,8 +49,7 @@
 		572A900C25060279002697DD /* Kadai21ForRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kadai21ForRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572A900F25060279002697DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572A901125060279002697DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		572A901325060279002697DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		572A901625060279002697DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		572A901325060279002697DD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		572A901825060280002697DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572A901B25060280002697DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572A901D25060280002697DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +59,9 @@
 		572A902D25060281002697DD /* Kadai21ForRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kadai21ForRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		572A903125060281002697DD /* Kadai21ForRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai21ForRxSwiftUITests.swift; sourceTree = "<group>"; };
 		572A903325060281002697DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572A903F25060A65002697DD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		572A904425060F7A002697DD /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		572A904625060FF0002697DD /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		7560E2AA7B0C0AA6146663A4 /* Pods-Kadai21ForRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift/Pods-Kadai21ForRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		D50CFEF011B175DA23608213 /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA94402C1F653F49CF22F34D /* Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests/Pods-Kadai21ForRxSwift-Kadai21ForRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				27966887A27388DD1CB31FD0 /* Pods-Kadai21ForRxSwiftTests.debug.xcconfig */,
 				0DEEBDDAB7A1B1547DAA6552 /* Pods-Kadai21ForRxSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,10 +143,11 @@
 		572A900E25060279002697DD /* Kadai21ForRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				572A904325060F5F002697DD /* Realm */,
+				572A904125060D86002697DD /* View */,
+				572A904625060FF0002697DD /* RegisterModel.swift */,
 				572A900F25060279002697DD /* AppDelegate.swift */,
 				572A901125060279002697DD /* SceneDelegate.swift */,
-				572A901325060279002697DD /* ViewController.swift */,
-				572A901525060279002697DD /* Main.storyboard */,
 				572A901825060280002697DD /* Assets.xcassets */,
 				572A901A25060280002697DD /* LaunchScreen.storyboard */,
 				572A901D25060280002697DD /* Info.plist */,
@@ -167,6 +171,23 @@
 				572A903325060281002697DD /* Info.plist */,
 			);
 			path = Kadai21ForRxSwiftUITests;
+			sourceTree = "<group>";
+		};
+		572A904125060D86002697DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				572A901325060279002697DD /* MainViewController.swift */,
+				572A903F25060A65002697DD /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		572A904325060F5F002697DD /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				572A904425060F7A002697DD /* RealmManager.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				572A901C25060280002697DD /* LaunchScreen.storyboard in Resources */,
+				572A904025060A65002697DD /* MainViewController.xib in Resources */,
 				572A901925060280002697DD /* Assets.xcassets in Resources */,
-				572A901725060279002697DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +429,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572A901425060279002697DD /* ViewController.swift in Sources */,
+				572A901425060279002697DD /* MainViewController.swift in Sources */,
+				572A904725060FF0002697DD /* RegisterModel.swift in Sources */,
+				572A904525060F7A002697DD /* RealmManager.swift in Sources */,
 				572A901025060279002697DD /* AppDelegate.swift in Sources */,
 				572A901225060279002697DD /* SceneDelegate.swift in Sources */,
 			);
@@ -446,14 +469,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		572A901525060279002697DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				572A901625060279002697DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		572A901A25060280002697DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -590,10 +605,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -608,10 +624,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Isami.Kadai21ForRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
