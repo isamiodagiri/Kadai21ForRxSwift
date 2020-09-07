@@ -12,7 +12,12 @@ import RxDataSources
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            self.setupTableView()
+            self.setupViewModel()
+        }
+    }
     
     private let disposeBag = DisposeBag()
     
@@ -28,6 +33,26 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+}
+extension MainViewController {
+    
+    private func setupViewModel() {
+        viewModel = MainViewModel()
+
+        viewModel?.items
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+
+        viewModel?.testItem()
     }
 }
 
+extension MainViewController: UITableViewDelegate {
+
+    private func setupTableView() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+    }
+}

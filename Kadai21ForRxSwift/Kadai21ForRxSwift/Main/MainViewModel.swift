@@ -34,4 +34,12 @@ class MainViewModel {
         
         items.onNext(section)
     }
+    
+    func testItem() {
+        let section: [SectionOfRegister] = [SectionOfRegister(items: [RegisterModel(title: "testData1")]),
+                                            SectionOfRegister(items: [RegisterModel(title: "testData2")]),
+                                            SectionOfRegister(items: [RegisterModel(title: "testData3")])]
+        
+        items.onNext(section)
+    }
 }

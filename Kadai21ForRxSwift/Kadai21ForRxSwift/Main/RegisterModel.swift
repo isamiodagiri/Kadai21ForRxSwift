@@ -20,8 +20,4 @@ class RegisterModel: Object {
     }
     
     required init() {}
-    
-    override class func primaryKey() -> String? {
-        return "id"
-    }
 }
