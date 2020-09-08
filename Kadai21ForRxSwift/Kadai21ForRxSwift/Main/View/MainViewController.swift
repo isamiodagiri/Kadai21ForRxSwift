@@ -23,9 +23,12 @@ class MainViewController: UIViewController {
     
     private lazy var dataSource = RxTableViewSectionedReloadDataSource<SectionOfRegister>(configureCell: configureCell)
     
-    private lazy var configureCell: RxTableViewSectionedReloadDataSource<SectionOfRegister>.ConfigureCell = { [weak self] dataSource, tableView, indexPath, registerData in
+    private lazy var configureCell: RxTableViewSectionedReloadDataSource<SectionOfRegister>.ConfigureCell = { dataSource, tableView, indexPath, registerData in
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.accessoryType = .detailButton
         cell.textLabel?.text = registerData.title
+        cell.imageView?.image = #imageLiteral(resourceName: "checkMark")
+        
         return cell
     }
     
@@ -33,7 +36,6 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
 extension MainViewController {
@@ -52,7 +54,10 @@ extension MainViewController {
 extension MainViewController: UITableViewDelegate {
 
     private func setupTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        tableView.register(UITableViewCell.self,
+                           forCellReuseIdentifier: "cell")
+        tableView.rx
+            .setDelegate(self)
+            .disposed(by: disposeBag)
     }
 }
