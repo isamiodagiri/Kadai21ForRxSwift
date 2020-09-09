@@ -19,12 +19,18 @@ class MainViewController: UIViewController {
         }
     }
     
+    private var rightBarButton: UIBarButtonItem?
+    
     private let disposeBag = DisposeBag()
     
     private lazy var dataSource = RxTableViewSectionedReloadDataSource<SectionOfRegister>(configureCell: configureCell)
     
     private lazy var configureCell: RxTableViewSectionedReloadDataSource<SectionOfRegister>.ConfigureCell = { dataSource, tableView, indexPath, registerData in
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+//        if let cell = cell as? RegisterTableViewCell {
+//            cell.setup(title: registerData.title)
+//        }
         cell.accessoryType = .detailButton
         cell.textLabel?.text = registerData.title
         cell.imageView?.image = #imageLiteral(resourceName: "checkMark")
@@ -36,6 +42,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBarButton()
     }
 }
 extension MainViewController {
@@ -44,20 +51,38 @@ extension MainViewController {
         viewModel = MainViewModel()
 
         viewModel?.items
-            .bind(to: tableView.rx.items(dataSource: dataSource))
-            .disposed(by: disposeBag)
+            .bind(to: self.tableView.rx.items(dataSource: dataSource))
+            .disposed(by: self.disposeBag)
 
         viewModel?.testItem()
+    }
+    
+    private func setupNavigationBarButton() {
+        self.rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add,
+                                                        target: nil, action: nil)
+        
+        self.rightBarButton?.rx.tap
+            .subscribe { [weak self] _ in           // 「_ in」が重要
+                self?.segue() }
+            .disposed(by: self.disposeBag)
+        
+        self.navigationItem.setRightBarButton(self.rightBarButton, animated: true)
+    }
+    
+    func segue() {
+        let navigationController = UINavigationController(rootViewController: EditViewController())
+        navigationController.modalPresentationStyle = .fullScreen
+        self.present(navigationController, animated: true)
     }
 }
 
 extension MainViewController: UITableViewDelegate {
 
     private func setupTableView() {
-        tableView.register(UITableViewCell.self,
+        self.tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "cell")
-        tableView.rx
+        self.tableView.rx
             .setDelegate(self)
-            .disposed(by: disposeBag)
+            .disposed(by: self.disposeBag)
     }
 }
