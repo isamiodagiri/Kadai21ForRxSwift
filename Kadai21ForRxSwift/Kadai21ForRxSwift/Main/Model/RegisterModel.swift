@@ -10,14 +10,7 @@ import Foundation
 import RealmSwift
 
 class RegisterModel: Object {
-    
-    dynamic var id: String = NSUUID().uuidString
-    dynamic var title: String?
-    dynamic var timeStamp: Date = Date()
-
-    init(title: String?) {
-        self.title = title
-    }
-    
-    required init() {}
+    @objc dynamic var id = NSUUID().uuidString
+    @objc dynamic var title = ""
+    @objc dynamic var timeStamp = Date()
 }

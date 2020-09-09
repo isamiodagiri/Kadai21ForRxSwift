@@ -27,7 +27,7 @@ extension SectionOfRegister: SectionModelType {
 class MainViewModel {
     let items = PublishSubject<[SectionOfRegister]>()
 
-    func updateItem() {
+    func fetchItem() {
         let dataList: [RegisterModel] = RealmManager.shared.fetchRegisterData() ?? []
         let section: [SectionOfRegister] = dataList
             .map { SectionOfRegister(items: [$0]) }
@@ -36,10 +36,10 @@ class MainViewModel {
     }
     
     func testItem() {
-        let section: [SectionOfRegister] = [SectionOfRegister(items: [RegisterModel(title: "testData1")]),
-                                            SectionOfRegister(items: [RegisterModel(title: "testData2")]),
-                                            SectionOfRegister(items: [RegisterModel(title: "testData3")])]
-        
-        items.onNext(section)
+//        let section: [SectionOfRegister] = [SectionOfRegister(items: [RegisterModel(title: "testData1")]),
+//                                            SectionOfRegister(items: [RegisterModel(title: "testData2")]),
+//                                            SectionOfRegister(items: [RegisterModel(title: "testData3")])]
+//        
+//        items.onNext(section)
     }
 }

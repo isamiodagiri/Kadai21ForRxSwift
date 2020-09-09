@@ -12,16 +12,39 @@ import RxCocoa
 
 class EditViewController: UIViewController {
     
-    @IBOutlet weak var editTextField: UITextField!
+    @IBOutlet weak var inputTextField: UITextField!
     
     private var leftBarButton: UIBarButtonItem?
     private var rightBarButton: UIBarButtonItem?
     
     private let disposeBag = DisposeBag()
     
+    private var viewModel: EditViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBarItem()
+        self.viewModel = EditViewModel()
+        
+        
+        viewModel?.isError
+            .subscribe(onNext: { [unowned self] event in
+                if !event {
+                    self.dismiss(animated: true)
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        inputTextField.rx.text.orEmpty.asDriver()
+            .drive(onNext: { [unowned self] text in
+                self.viewModel?.inputText = text
+            })
+            .disposed(by: disposeBag)
+        
+        inputTextField.rx.controlEvent(.editingDidEnd).asDriver()
+            .drive(onNext: { [unowned self] _ in
+                self.viewModel?.registrationData()
+            }).disposed(by: disposeBag)
     }
     
     func setupNavigationBarItem() {
@@ -30,14 +53,15 @@ class EditViewController: UIViewController {
         self.rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save,
                                                         target: nil, action: nil)
         
-        self.leftBarButton?.rx.tap
-            .subscribe { [weak self] _ in           // 「_ in」が重要
-                self?.dismiss(animated: true) }
+        leftBarButton?.rx.tap
+            .subscribe { [unowned self] _ in           // 「_ in」が重要
+                self.dismiss(animated: true) }
             .disposed(by: self.disposeBag)
         
-        self.rightBarButton?.rx.tap
-            .subscribe { [weak self] _ in           // 「_ in」が重要
-                print("asd") }
+        rightBarButton?.rx.tap
+            .subscribe { [unowned self] _ in           // 「_ in」が重要
+                self.viewModel?.registrationData()
+            }
             .disposed(by: self.disposeBag)
         
         self.navigationItem.setLeftBarButton(self.leftBarButton, animated: true)

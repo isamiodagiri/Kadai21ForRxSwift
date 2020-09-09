@@ -54,7 +54,7 @@ extension MainViewController {
             .bind(to: self.tableView.rx.items(dataSource: dataSource))
             .disposed(by: self.disposeBag)
 
-        viewModel?.testItem()
+        viewModel?.fetchItem()
     }
     
     private func setupNavigationBarButton() {

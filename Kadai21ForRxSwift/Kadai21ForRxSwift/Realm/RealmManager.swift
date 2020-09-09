@@ -18,12 +18,26 @@ class RealmManager {
             .compactMap { $0 as? RegisterModel }
     }
     
-    func pushRegisterData(data: Object) {
-        self.push(data)
+    func pushRegisterData(text: String) {
+        let model = RegisterModel()
+        model.title = text
+        
+        self.push(model)
     }
     
     func deleteRegisterData(data: Object) {
         self.delete(data)
+    }
+    
+    func updateRegisterModel(title: String, _ data: RegisterModel) {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                data.title = title
+                data.timeStamp = Date()
+            }
+        }
+        catch {}
     }
 
     private func fetch(_ type: Object.Type) -> Results<Object>? {
@@ -43,7 +57,9 @@ class RealmManager {
                 realm.add(data)
             }
         }
-        catch {}
+        catch let error {
+            print(error)
+        }
     }
     
     private func delete(_ data: Object) {

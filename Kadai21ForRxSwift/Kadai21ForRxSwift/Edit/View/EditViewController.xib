@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController" customModule="Kadai21ForRxSwift" customModuleProvider="target">
             <connections>
-                <outlet property="editTextField" destination="qWC-cT-4vL" id="wtl-AQ-d3F"/>
+                <outlet property="inputTextField" destination="qWC-cT-4vL" id="6FO-6h-4UX"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4Vw-hc-cpk"/>
             </connections>
         </placeholder>
@@ -31,7 +31,7 @@
                             <rect key="frame" x="68" y="0.0" width="226" height="34"/>
                             <color key="textColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
                         </textField>
                     </subviews>
                 </stackView>
