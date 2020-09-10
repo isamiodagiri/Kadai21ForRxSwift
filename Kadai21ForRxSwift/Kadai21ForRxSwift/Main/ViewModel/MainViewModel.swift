@@ -25,21 +25,25 @@ extension SectionOfRegister: SectionModelType {
 }
 
 class MainViewModel {
-    let items = PublishSubject<[SectionOfRegister]>()
+    let items = BehaviorSubject<[SectionOfRegister]>(value: [])
 
     func fetchItem() {
         let dataList: [RegisterModel] = RealmManager.shared.fetchRegisterData() ?? []
-        let section: [SectionOfRegister] = dataList
-            .map { SectionOfRegister(items: [$0]) }
+        let section: [SectionOfRegister] = [SectionOfRegister(items: dataList)]
         
         items.onNext(section)
     }
     
-    func testItem() {
-//        let section: [SectionOfRegister] = [SectionOfRegister(items: [RegisterModel(title: "testData1")]),
-//                                            SectionOfRegister(items: [RegisterModel(title: "testData2")]),
-//                                            SectionOfRegister(items: [RegisterModel(title: "testData3")])]
-//        
-//        items.onNext(section)
+    func removeItem(at indexPath: IndexPath) {
+        guard let list = try? items.value() else { return }
+        
+        var items = list[indexPath.section].items
+        let model = items[indexPath.row]
+        RealmManager.shared.deleteRegisterData(data: model)
+        
+        items.remove(at: indexPath.row)
+        let section: [SectionOfRegister] = [SectionOfRegister(items: items)]
+
+        self.items.onNext(section)
     }
 }

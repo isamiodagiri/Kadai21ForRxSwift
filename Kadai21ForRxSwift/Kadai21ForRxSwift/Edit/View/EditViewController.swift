@@ -54,12 +54,12 @@ class EditViewController: UIViewController {
                                                         target: nil, action: nil)
         
         leftBarButton?.rx.tap
-            .subscribe { [unowned self] _ in           // 「_ in」が重要
+            .subscribe { [unowned self] _ in
                 self.dismiss(animated: true) }
             .disposed(by: self.disposeBag)
         
         rightBarButton?.rx.tap
-            .subscribe { [unowned self] _ in           // 「_ in」が重要
+            .subscribe { [unowned self] _ in
                 self.viewModel?.registrationData()
             }
             .disposed(by: self.disposeBag)

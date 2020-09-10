@@ -23,20 +23,7 @@ class MainViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
     
-    private lazy var dataSource = RxTableViewSectionedReloadDataSource<SectionOfRegister>(configureCell: configureCell)
-    
-    private lazy var configureCell: RxTableViewSectionedReloadDataSource<SectionOfRegister>.ConfigureCell = { dataSource, tableView, indexPath, registerData in
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-//        if let cell = cell as? RegisterTableViewCell {
-//            cell.setup(title: registerData.title)
-//        }
-        cell.accessoryType = .detailButton
-        cell.textLabel?.text = registerData.title
-        cell.imageView?.image = #imageLiteral(resourceName: "checkMark")
-        
-        return cell
-    }
+    private lazy var dataSource = MainViewController.dataSource()
     
     private var viewModel: MainViewModel?
     
@@ -44,8 +31,30 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.setupNavigationBarButton()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.viewModel?.fetchItem()
+    }
 }
 extension MainViewController {
+    static func dataSource() -> RxTableViewSectionedReloadDataSource<SectionOfRegister> {
+        return RxTableViewSectionedReloadDataSource(
+            configureCell: { dataSource, tableView, indexPath, registerData in
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        //        if let cell = cell as? RegisterTableViewCell {
+        //            cell.setup(title: registerData.title)
+        //        }
+                cell.accessoryType = .detailButton
+                cell.textLabel?.text = registerData.title
+                cell.imageView?.image = #imageLiteral(resourceName: "checkMark")
+                return cell
+            },
+            canEditRowAtIndexPath: { _, _ in
+                return true
+            }
+        )
+    }
     
     private func setupViewModel() {
         viewModel = MainViewModel()
@@ -53,8 +62,6 @@ extension MainViewController {
         viewModel?.items
             .bind(to: self.tableView.rx.items(dataSource: dataSource))
             .disposed(by: self.disposeBag)
-
-        viewModel?.fetchItem()
     }
     
     private func setupNavigationBarButton() {
@@ -84,5 +91,12 @@ extension MainViewController: UITableViewDelegate {
         self.tableView.rx
             .setDelegate(self)
             .disposed(by: self.disposeBag)
+        
+        tableView.rx
+        .itemDeleted
+        .subscribe(onNext: {
+            self.viewModel?.removeItem(at: $0)
+        })
+        .disposed(by: disposeBag)
     }
 }
