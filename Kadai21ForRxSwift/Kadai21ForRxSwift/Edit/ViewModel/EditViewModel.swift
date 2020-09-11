@@ -14,25 +14,32 @@ import RealmSwift
 class EditViewModel {
     
     var model: RegisterModel?
-    var inputText: String?
+    var inputedText: String?
     
+    var registeredText = PublishRelay<String>()
     var isError = PublishRelay<Bool>()
     
     init(_ model: RegisterModel?) {
         self.model = model
     }
     
+    func checkText() {
+        if let title = self.model?.title {
+            self.registeredText.accept(title)
+        }
+    }
+    
     func registrationData() {
-        guard let inputText = self.inputText, !inputText.isEmpty else {
+        guard let inputedText = self.inputedText, !inputedText.isEmpty else {
             self.isError.accept(true)
             return
         }
         
         if let model = self.model {
-            RealmManager.shared.updateRegisterModel(title: inputText, model)
+            RealmManager.shared.updateRegisterModel(title: inputedText, model)
         }
         else {
-            RealmManager.shared.pushRegisterData(text: inputText)
+            RealmManager.shared.pushRegisterData(text: inputedText)
         }
         self.isError.accept(false)
     }

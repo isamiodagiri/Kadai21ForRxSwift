@@ -26,7 +26,8 @@ extension SectionOfRegister: SectionModelType {
 
 class MainViewModel {
     let items = BehaviorSubject<[SectionOfRegister]>(value: [])
-
+    let fetchModel = PublishSubject<RegisterModel>()
+    
     func fetchItem() {
         let dataList: [RegisterModel] = RealmManager.shared.fetchRegisterData() ?? []
         let section: [SectionOfRegister] = [SectionOfRegister(items: dataList)]
@@ -34,8 +35,13 @@ class MainViewModel {
         items.onNext(section)
     }
     
-    func fecthModelData(at indexPath: IndexPath) {
+    func fecthEditModelData(at indexPath: IndexPath) {
+        guard let list = try? items.value() else { return }
         
+        let items = list[indexPath.section].items
+        let model = items[indexPath.row]
+
+        self.fetchModel.onNext(model)
     }
     
     func removeItem(at indexPath: IndexPath) {

@@ -31,28 +31,26 @@ class EditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupViewModel()
         self.setupNavigationBarItem()
+        self.setupTextField()
+        self.viewModel?.checkText()
+    }
+    
+    func setupViewModel() {
         self.viewModel = EditViewModel(self.model)
         
+        self.viewModel?.registeredText
+            .subscribe(onNext: { [unowned self] text in
+                self.inputTextField.text = text})
+            .disposed(by: disposeBag)
         
-        viewModel?.isError
-            .subscribe(onNext: { [unowned self] event in
-                if !event {
+        self.viewModel?.isError
+            .subscribe(onNext: { [unowned self] isError in
+                if !isError {
                     self.dismiss(animated: true)
-                }
-            })
+                }})
             .disposed(by: disposeBag)
-        
-        inputTextField.rx.text.orEmpty.asDriver()
-            .drive(onNext: { [unowned self] text in
-                self.viewModel?.inputText = text
-            })
-            .disposed(by: disposeBag)
-        
-        inputTextField.rx.controlEvent(.editingDidEnd).asDriver()
-            .drive(onNext: { [unowned self] _ in
-                self.viewModel?.registrationData()
-            }).disposed(by: disposeBag)
     }
     
     func setupNavigationBarItem() {
@@ -61,18 +59,29 @@ class EditViewController: UIViewController {
         self.rightBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save,
                                                         target: nil, action: nil)
         
-        leftBarButton?.rx.tap
+        self.leftBarButton?.rx.tap
             .subscribe { [unowned self] _ in
-                self.dismiss(animated: true) }
+                self.dismiss(animated: true)}
             .disposed(by: self.disposeBag)
         
-        rightBarButton?.rx.tap
+        self.rightBarButton?.rx.tap
             .subscribe { [unowned self] _ in
-                self.viewModel?.registrationData()
-            }
+                self.viewModel?.registrationData()}
             .disposed(by: self.disposeBag)
         
         self.navigationItem.setLeftBarButton(self.leftBarButton, animated: true)
         self.navigationItem.setRightBarButton(self.rightBarButton, animated: true)
+    }
+    
+    func setupTextField() {
+        self.inputTextField.rx.text.orEmpty.asDriver()
+            .drive(onNext: { [unowned self] text in
+                self.viewModel?.inputedText = text})
+            .disposed(by: disposeBag)
+           
+        self.inputTextField.rx.controlEvent(.editingDidEnd).asDriver()
+            .drive(onNext: { [unowned self] _ in
+                self.viewModel?.registrationData()})
+            .disposed(by: disposeBag)
     }
 }

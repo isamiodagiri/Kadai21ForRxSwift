@@ -57,11 +57,23 @@ extension MainViewController {
     }
     
     private func setupViewModel() {
-        viewModel = MainViewModel()
+        self.viewModel = MainViewModel()
 
-        viewModel?.items
+        self.viewModel?.items
             .bind(to: self.tableView.rx.items(dataSource: dataSource))
             .disposed(by: self.disposeBag)
+        
+        self.viewModel?.fetchModel
+            .subscribe(onNext: { [unowned self] model in
+                self.segue(model)})
+            .disposed(by: self.disposeBag)
+    }
+    
+    private func segue(_ model: RegisterModel? = nil) {
+        let vc = EditViewController.instance(model)
+        let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.modalPresentationStyle = .fullScreen
+        self.present(navigationController, animated: true)
     }
     
     private func setupNavigationBarButton() {
@@ -74,13 +86,6 @@ extension MainViewController {
             .disposed(by: self.disposeBag)
         
         self.navigationItem.setRightBarButton(self.rightBarButton, animated: true)
-    }
-    
-    func segue(_ model: RegisterModel? = nil) {
-        let vc = EditViewController.instance(model)
-        let navigationController = UINavigationController(rootViewController: vc)
-        navigationController.modalPresentationStyle = .fullScreen
-        self.present(navigationController, animated: true)
     }
 }
 
@@ -105,8 +110,8 @@ extension MainViewController: UITableViewDelegate {
             .disposed(by: disposeBag)
         
         self.tableView.rx.itemAccessoryButtonTapped
-            .subscribe(onNext: { [unowned self] index in
-                self.segue()})
+            .subscribe(onNext: { [unowned self] indexPath in
+                self.viewModel?.fecthEditModelData(at: indexPath)})
             .disposed(by: disposeBag)
     }
 }
