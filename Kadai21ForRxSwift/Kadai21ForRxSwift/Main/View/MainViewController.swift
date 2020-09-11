@@ -76,8 +76,9 @@ extension MainViewController {
         self.navigationItem.setRightBarButton(self.rightBarButton, animated: true)
     }
     
-    func segue() {
-        let navigationController = UINavigationController(rootViewController: EditViewController())
+    func segue(_ model: RegisterModel? = nil) {
+        let vc = EditViewController.instance(model)
+        let navigationController = UINavigationController(rootViewController: vc)
         navigationController.modalPresentationStyle = .fullScreen
         self.present(navigationController, animated: true)
     }
@@ -92,11 +93,20 @@ extension MainViewController: UITableViewDelegate {
             .setDelegate(self)
             .disposed(by: self.disposeBag)
         
-        tableView.rx
-        .itemDeleted
-        .subscribe(onNext: {
-            self.viewModel?.removeItem(at: $0)
-        })
-        .disposed(by: disposeBag)
+        self.tableView.rx
+            .itemDeleted
+            .subscribe(onNext: {
+                self.viewModel?.removeItem(at: $0)})
+            .disposed(by: disposeBag)
+        
+        self.tableView.rx.itemSelected
+            .subscribe(onNext: {
+                print($0)})
+            .disposed(by: disposeBag)
+        
+        self.tableView.rx.itemAccessoryButtonTapped
+            .subscribe(onNext: { [unowned self] index in
+                self.segue()})
+            .disposed(by: disposeBag)
     }
 }

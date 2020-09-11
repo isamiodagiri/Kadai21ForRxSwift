@@ -21,10 +21,18 @@ class EditViewController: UIViewController {
     
     private var viewModel: EditViewModel?
     
+    private var model: RegisterModel?
+    
+    static func instance(_ model: RegisterModel?) -> EditViewController {
+        let vc = EditViewController()
+        vc.model = model
+        return vc
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBarItem()
-        self.viewModel = EditViewModel()
+        self.viewModel = EditViewModel(self.model)
         
         
         viewModel?.isError

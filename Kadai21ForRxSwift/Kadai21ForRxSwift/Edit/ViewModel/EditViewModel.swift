@@ -18,7 +18,7 @@ class EditViewModel {
     
     var isError = PublishRelay<Bool>()
     
-    init(model: RegisterModel? = nil) {
+    init(_ model: RegisterModel?) {
         self.model = model
     }
     

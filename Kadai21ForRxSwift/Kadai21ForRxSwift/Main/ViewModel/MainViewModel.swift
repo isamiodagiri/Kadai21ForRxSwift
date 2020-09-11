@@ -34,6 +34,10 @@ class MainViewModel {
         items.onNext(section)
     }
     
+    func fecthModelData(at indexPath: IndexPath) {
+        
+    }
+    
     func removeItem(at indexPath: IndexPath) {
         guard let list = try? items.value() else { return }
         
